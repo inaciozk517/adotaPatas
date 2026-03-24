@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --color-orange: #e8600a;
+  --color-blue: #1a3a6b;
+  --color-white: #ffffff;
+  --color-white-muted: rgba(255,255,255,0.75);
+  --color-border: rgba(255,255,255,0.25);
+  --color-bg: #1a1614;
+  --color-bg-dark: #0f0d0c;
+  --color-accent: #c8a882;
+  --color-accent-light: #e8d5bc;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #0a0a0a;
+  color: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,143 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: #0a0a0a;
+  padding: 0 80px 60px;
+}
+
+.footer-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 48px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* ===== BRAND ===== */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-logo-adota,
+.footer-logo-heart,
+.footer-logo-patas {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  display: inline;
+}
+
+.footer-logo-adota { color: var(--color-orange); }
+.footer-logo-heart { color: var(--color-orange); font-size: 1rem; margin: 0 2px; font-style: normal; }
+.footer-logo-patas { color: var(--color-blue); }
+
+.footer-tagline {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: #555;
+  margin-top: 4px;
+  letter-spacing: 0.03em;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  transition: var(--transition);
+}
+
+.footer-social-btn:hover {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+  transform: translateY(-2px);
+}
+
+/* ===== COLUNAS ===== */
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-col-title {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.footer-col-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  transition: color 0.25s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-orange);
+}
+
+.footer-link svg {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .footer {
+    padding: 0 32px 48px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-cols {
+    grid-template-columns: 1fr;
+  }
+}
